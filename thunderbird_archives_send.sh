@@ -1,5 +1,14 @@
 #!/bin/bash
 
+# Apuntar a la pantalla activa (por defecto :0)
+export DISPLAY=:0
+
+# Darle a Cron la llave de seguridad de tu sesión gráfica
+export XAUTHORITY="/run/user/1000/gdm/Xauthority"
+
+# Forzar permisos para procesos locales
+xhost +local: > /dev/null 2>&1
+
 # contiene la fecha del día del equipo
 today=$(date | awk '{print $2,$3,$4}')
 
