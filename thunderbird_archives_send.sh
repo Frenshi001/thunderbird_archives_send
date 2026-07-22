@@ -76,7 +76,7 @@ function process_send (){
 	exit 0
 }
 
-# multiples fechas del mes para confirmar y enviar; el formato es "dd mm yy"
+# multiples fechas del mes para confirmar y enviar; el formato es "dd mm yy" (cambiar el idioma de la fecha a conveniencia)
 fechas=("31 jul 2026" "16 jul 2026" "31 ago 2026" "22 sep 2026")
 
 # Itera dentro del arreglo de "fechas" si alguna hace match procede a ejecutar la función "process_send" 
